@@ -81,7 +81,7 @@ Possible models include:
 
 ### Course Recommendation
 
-OULAD provides historical student-course interaction data that can be used to construct the recommendation task.
+Data that can be used to construct the recommendation task.
 
 Relevant information includes:
 

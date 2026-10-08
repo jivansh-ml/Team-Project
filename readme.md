@@ -93,14 +93,6 @@ Relevant information includes:
 
 The recommendation system will use historical interactions to identify courses that may be relevant to a student.
 
-### Academic Risk Prediction
-
-OULAD is also used for academic-risk prediction using historical academic, assessment, and course-related information.
-
-Dataset:
-
-[OULAD - Open University Learning Analytics Dataset](https://analyse.kmi.open.ac.uk/open_dataset)
-
 ## Tech Stack
 
 ```text

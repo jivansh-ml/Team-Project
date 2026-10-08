@@ -71,11 +71,13 @@ Potential features include:
 Possible models include:
 
 - Logistic Regression
-- Decision Tree
+- Random Forest
+- Naive Bayes
+- KNN
 
 ## Dataset
 
-The **Open University Learning Analytics Dataset (OULAD)** is used for both Machine Learning components.
+ synthetic, simulated dataset generated specifically for testing and demonstration purposes.
 
 ### Course Recommendation
 

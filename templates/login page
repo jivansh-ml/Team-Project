@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Course Registration - Login</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 50px; max-width: 400px; margin: auto; }
+        .flash { color: red; }
+        input, button { padding: 10px; margin-top: 5px; width: 100%; box-sizing: border-box; }
+    </style>
+</head>
+<body>
+    <h2>System Login</h2>
+    
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="flash">
+        {% for message in messages %}
+          <p>{{ message }}</p>
+        {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    <form action="/login" method="POST">
+        <label>Email Address:</label>
+        <input type="email" name="email" placeholder="example@iitg.ac.in" required>
+        
+        <br><br>
+        <label>Password:</label>
+        <input type="password" name="password" required>
+        
+        <br><br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

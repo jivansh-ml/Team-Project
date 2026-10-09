@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instructor Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <div style="float: right;">
+        <a href="/logout">Logout</a>
+    </div>
+
+    <h1>Welcome, Prof. {{ instructor.name }}</h1>
+    <p><strong>Specialization:</strong> {{ instructor.specialization }}</p>
+    
+    <hr>
+
+    <h3>Your Assigned Sections (Current Semester)</h3>
+    {% for sec in sections %}
+    <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; border-radius: 5px;">
+        <h4>{{ sec.course_code }} - {{ sec.course_name }} (Section {{ sec.section_id }})</h4>
+        <p><strong>Room:</strong> {{ sec.room_no }} | <strong>Schedule:</strong> {{ sec.schedule }}</p>
+        <p><strong>Enrolled Students:</strong> {{ sec.enrolled_count }}</p>
+        
+        {% if sec.students %}
+        <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+            <tr>
+                <th style="background-color: #f8f9fa; border: 1px solid #ddd; padding: 8px;">Student ID</th>
+                <th style="background-color: #f8f9fa; border: 1px solid #ddd; padding: 8px;">Name</th>
+                <th style="background-color: #f8f9fa; border: 1px solid #ddd; padding: 8px;">Email</th>
+            </tr>
+            {% for student in sec.students %}
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">{{ student.student_id }}</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">{{ student.name }}</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">{{ student.email }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p style="color: #666; font-style: italic;">No students currently registered.</p>
+        {% endif %}
+    </div>
+    {% else %}
+    <p>You have no assigned sections for the current semester.</p>
+    {% endfor %}
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+course_id,course_code,course_name,credits,dept_id
+1,MA501,Discrete Mathematics,8,1
+2,MA511,Computer Programming,8,1
+3,MA521,Modern Algebra,8,1
+4,MA522,Linear Algebra,8,1
+5,MA541,Real Analysis,8,1
+6,MA547,Complex Analysis,8,1
+7,MA548,Ordinary Differential Equations,8,1
+8,MA549,Topology,8,1
+9,MA591,Optimization,8,1
+10,MA590,Probability Theory,8,1
+11,MA543,Functional Analysis,8,1
+12,MA567,Partial Differential Equations,8,1
+13,MA572,Numerical Analysis,8,1
+14,MA550,Measure Theory,8,1
+15,MA599,Project,14,1
+16,MA502,Graph Theory,6,1
+17,MA503,Network Flows Algorithms,6,1
+18,MA505,Algebraic Coding Theory,6,1
+19,MA506,Number Theory and Cryptography,6,1
+20,MA509,Algebraic Number Theory,6,1
+21,MA517,Functional and Logic Programming,6,1
+22,MA518,Database Management Systems,6,1
+23,MA563,Calculus of Variations,6,1
+24,MA575,Mathematical Methods,6,1
+25,MA593,Statistical Methods and Time Series,6,1
+26,MA614,Applications of Computational Geometry,6,1
+27,MA519,Complexity Theory,6,1
+28,MA562,Mathematical Modelling and Simulation,6,1
+29,MA571,Numerical Linear Algebra,6,1
+30,MA594,Statistical Decision Theory,6,1
+31,MA598,Mathematics of Financial Derivatives,6,1
+32,MA622,Galois Theory,6,1
+33,MA687,Generalized Linear Models,6,1
+34,MA510,Combinatorics,6,1
+35,MA545,Complex Dynamics and Fractals,6,1
+36,MA561,Fluid Dynamics,6,1
+37,MA564,Fractals and Chaos,6,1
+38,MA565,Mathematical Biology,6,1
+39,MA592,Mathematical Finance,6,1
+40,MA597,Queueing Theory and Applications,6,1
+41,MA612,Logic Programming,6,1
+42,MA651,Distributed Algorithms,6,1
+43,MA654,Advanced Data Structures and Algorithms,6,1
+44,MA667,Actuarial Mathematics,6,1
+45,MA682,Statistical Inference,6,1
+46,MA690,Understanding Statistical Learning Theory,6,1
+47,CS501,Advanced Algorithms,8,2
+48,CS511,Advanced Data Structures,8,2
+49,CS521,Computer Architecture,8,2
+50,CS531,Discrete Structures,8,2
+51,CS541,Advanced Programming,8,2
+52,CS547,Operating Systems,8,2
+53,CS548,Database Management Systems,8,2
+54,CS549,Computer Networks,8,2
+55,CS551,Theory of Computation,8,2
+56,CS560,Software Engineering,8,2
+57,CS561,Machine Learning,8,2
+58,CS567,Compiler Design,8,2
+59,CS572,Distributed Systems,8,2
+60,CS580,Information Security,8,2
+61,CS599,Project,14,2
+62,CS602,Deep Learning,6,2
+63,CS603,Natural Language Processing,6,2
+64,CS604,Computer Vision,6,2
+65,CS605,Blockchain Technology,6,2
+66,CS606,Cloud Computing,6,2
+67,CS611,Reinforcement Learning,6,2
+68,CS612,Big Data Analytics,6,2
+69,CS613,Internet of Things,6,2
+70,CS614,Parallel Computing,6,2
+71,CS615,Quantum Computing,6,2
+72,CS621,Cyber Security,6,2
+73,CS622,Robotics,6,2
+74,CS623,Augmented and Virtual Reality,6,2
+75,CS624,Bioinformatics,6,2
+76,CS625,Algorithmic Game Theory,6,2
+77,PH501,Classical Mechanics,8,3
+78,PH511,Mathematical Methods in Physics,8,3
+79,PH521,Quantum Mechanics I,8,3
+80,PH522,Electrodynamics I,8,3
+81,PH541,Physics Laboratory I,8,3
+82,PH547,Statistical Mechanics,8,3
+83,PH548,Quantum Mechanics II,8,3
+84,PH549,Electrodynamics II,8,3
+85,PH551,Solid State Physics,8,3
+86,PH560,Nuclear Physics,8,3
+87,PH561,Particle Physics,8,3
+88,PH567,Condensed Matter Physics,8,3
+89,PH572,Computational Physics,8,3
+90,PH580,Laser Physics,8,3
+91,PH599,Project,14,3
+92,PH602,Astrophysics,6,3
+93,PH603,Plasma Physics,6,3
+94,PH604,Nonlinear Dynamics,6,3
+95,PH605,Fiber Optics,6,3
+96,PH606,Nanophysics,6,3
+97,PH611,Quantum Information,6,3
+98,PH612,Advanced Statistical Mechanics,6,3
+99,PH613,Thin Film Technology,6,3
+100,PH614,Medical Physics,6,3
+101,PH615,Photonics,6,3
+102,PH621,String Theory,6,3
+103,PH622,Cosmology,6,3
+104,PH623,Atmospheric Physics,6,3
+105,PH624,Materials Science,6,3
+106,PH625,Quantum Field Theory,6,3
+107,CH501,Inorganic Chemistry I,8,4
+108,CH511,Organic Chemistry I,8,4
+109,CH521,Physical Chemistry I,8,4
+110,CH522,Analytical Chemistry,8,4
+111,CH541,Spectroscopy,8,4
+112,CH547,Inorganic Chemistry II,8,4
+113,CH548,Organic Chemistry II,8,4
+114,CH549,Physical Chemistry II,8,4
+115,CH551,Polymer Chemistry,8,4
+116,CH560,Biochemistry,8,4
+117,CH561,Organometallic Chemistry,8,4
+118,CH567,Medicinal Chemistry,8,4
+119,CH572,Computational Chemistry,8,4
+120,CH580,Environmental Chemistry,8,4
+121,CH599,Project,14,4
+122,CH602,Supramolecular Chemistry,6,4
+123,CH603,Catalysis,6,4
+124,CH604,Photochemistry,6,4
+125,CH605,Surface Chemistry,6,4
+126,CH606,Forensic Chemistry,6,4
+127,CH611,Green Chemistry,6,4
+128,CH612,Materials Chemistry,6,4
+129,CH613,Food Chemistry,6,4
+130,CH614,Chemoinformatics,6,4
+131,CH615,Industrial Chemistry,6,4
+132,CH621,Nanochemistry,6,4
+133,CH622,Electrochemistry,6,4
+134,CH623,Bioinorganic Chemistry,6,4
+135,CH624,Natural Products Chemistry,6,4
+136,CH625,Crystal Engineering,6,4
+137,EE501,Circuit Theory,8,5
+138,EE511,Signals and Systems,8,5
+139,EE521,Electronic Devices,8,5
+140,EE522,Digital Electronics,8,5
+141,EE541,Electromagnetic Theory,8,5
+142,EE547,Control Systems,8,5
+143,EE548,Communication Systems,8,5
+144,EE549,Microprocessors and Interfacing,8,5
+145,EE551,Power Electronics,8,5
+146,EE560,VLSI Design,8,5
+147,EE561,Digital Signal Processing,8,5
+148,EE567,Embedded Systems,8,5
+149,EE572,Power Systems,8,5
+150,EE580,Antenna Design,8,5
+151,EE599,Project,14,5
+152,EE602,Image Processing,6,5
+153,EE603,Wireless Communication Networks,6,5
+154,EE604,Renewable Energy Systems,6,5
+155,EE605,RF and Microwave Design,6,5
+156,EE606,Sensor Networks,6,5
+157,EE611,Machine Vision,6,5
+158,EE612,Smart Grid Technology,6,5
+159,EE613,Biomedical Instrumentation,6,5
+160,EE614,Optical Communication,6,5
+161,EE615,Robotics and Control,6,5
+162,EE621,Electric Vehicles,6,5
+163,EE622,Speech Processing,6,5
+164,EE623,Radar Systems,6,5
+165,EE624,Neural Networks for Engineers,6,5
+166,EE625,Nanoelectronics,6,5

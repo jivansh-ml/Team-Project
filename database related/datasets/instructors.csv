@@ -1,0 +1,81 @@
+instructor_id,name,dept_id,specialization
+3,Dr. Kalpesh Kapoor,1,Algebra
+4,Dr. Shreemayee Bora,1,Analysis
+5,Dr. Bhupen Deka,1,Differential Equations
+6,Dr. Rafikul Alam,1,Numerical Methods
+7,Dr. Srinivasan Natesan,1,Optimization
+8,Dr. Anupam Saikia,1,Number Theory
+9,Dr. Duranta Sarma,1,Topology
+10,Dr. Manjil Saikia,1,Combinatorics
+11,Dr. Shyamashree Upadhyay,1,Probability & Statistics
+12,Dr. Anjan Chakrabarty,1,Functional Analysis
+13,Dr. Pankaj Mahanta,1,Graph Theory
+14,Dr. Rupam Barman,1,Algebraic Geometry
+15,Dr. Debopam Ghosh,1,Mathematical Finance
+16,Dr. Malay Banerjee,1,Mathematical Biology
+17,Dr. Amit Sethi,1,Machine Learning
+18,Dr. Sagar Bora,1,Fluid Dynamics
+19,Dr. Pramod Kumar,1,Coding Theory
+20,Dr. Neelam Sahoo,1,Stochastic Processes
+21,Dr. Gopal Basak,1,Cryptography
+22,Dr. Tanmay Dutta,1,Computational Mathematics
+23,Dr. Samit Bhattacharya,2,HCI
+24,Dr. Pinaki Mitra,2,Algorithms
+25,Dr. Gautam Barua,2,Distributed Systems
+26,Dr. Purandar Bhaduri,2,Formal Methods
+27,Dr. Arobinda Gupta,2,Networks
+28,Dr. Sukumar Nandi,2,IoT
+29,Dr. Diganta Goswami,2,Software Engineering
+30,Dr. Ashish Anand,2,Machine Learning
+31,Dr. Prithwijit Guha,2,Computer Vision
+32,Dr. Sanasam Singh,2,Data Mining
+33,Dr. Manas Kamal Bhuyan,2,Image Processing
+34,Dr. Santosh Biswas,2,Cyber Security
+35,Dr. Benny George,2,VLSI
+36,Dr. Rajesh Saha,2,Cloud Computing
+37,Dr. Aradhana Choudhury,2,NLP
+38,Dr. Subhradip Ghosh,3,Condensed Matter
+39,Dr. Amarjyoti Choudhury,3,Optics
+40,Dr. Poulose Poulose,3,Particle Physics
+41,Dr. Bipul Bhuyan,3,High Energy Physics
+42,Dr. Perumal Alagarsamy,3,Thin Films
+43,Dr. Pankaj Mishra,3,Statistical Mechanics
+44,Dr. Tarak Nath Dey,3,Quantum Mechanics
+45,Dr. Udit Raha,3,Nuclear Physics
+46,Dr. Saurabh Nath,3,Astrophysics
+47,Dr. Debashis Bandyopadhyay,3,Nanophysics
+48,Dr. Girish Setlur,3,Quantum Field Theory
+49,Dr. Sumanta Tewari,3,Laser Physics
+50,Dr. Anil Jain,3,Electrodynamics
+51,Dr. Pranjal Borah,3,Plasma Physics
+52,Dr. Kalyan Raman,3,Computational Physics
+53,Dr. Lal Dhar Singh,4,Inorganic Chemistry
+54,Dr. Bani Kanta Kuiri,4,Organic Chemistry
+55,Dr. Aditya Narayan Panda,4,Physical Chemistry
+56,Dr. Chandan Kumar Jana,4,Medicinal Chemistry
+57,Dr. Mohammad Qureshi,4,Materials Chemistry
+58,Dr. Sasanka Deka,4,Nanochemistry
+59,Dr. Debapratim Das,4,Supramolecular Chemistry
+60,Dr. Shyam Sundar Mandal,4,Bioinorganic
+61,Dr. Ramesh Giri,4,Catalysis
+62,Dr. Nandana Dutta,4,Polymer Chemistry
+63,Dr. Biplab Mondal,4,Environmental Chemistry
+64,Dr. Akshai Kumar,4,Organometallic
+65,Dr. Atul Thakor,4,Analytical Chemistry
+66,Dr. Subrata Kundu,4,Electrochemistry
+67,Dr. Priyadarsi De,4,Spectroscopy
+68,Dr. Ratnajit Bhattacharjee,5,VLSI
+69,Dr. Harshal Nemade,5,Signal Processing
+70,Dr. Prabin Bhuyan,5,Communication
+71,Dr. Sriparna Saha,5,Control Systems
+72,Dr. Amit Patra,5,Power Electronics
+73,Dr. Anand Bulusu,5,Nanoelectronics
+74,Dr. Gaurav Trivedi,5,Embedded Systems
+75,Dr. Shaik Rafi Ahamed,5,RF Design
+76,Dr. Chitralekha Mahanta,5,Robotics
+77,Dr. Durga Prasad Kar,5,Power Systems
+78,Dr. Nayan Jyoti Saikia,5,Antenna
+79,Dr. Akhil Ranjan Garg,5,Renewable Energy
+80,Dr. Arindam Karmakar,5,IoT
+81,Dr. Barsha Nag,5,Biomedical
+82,Dr. Sumit Darak,5,Wireless Networks

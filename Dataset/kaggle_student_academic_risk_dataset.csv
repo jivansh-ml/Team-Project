@@ -1,0 +1,172 @@
+Student_ID,Student_Name,Department,Cumulative_GPA,Total_Credits_Completed,Course_Code,Course_Name,Semester,Instructor,Prerequisite_Grade_Points,Semester_Credit_Load,Attendance_Rate_Pct,Final_Grade,Course_Outcome,Is_At_Risk
+7,Aarav,Computer Science,9.0,16,CS302,Operating Systems,Spring2025,Prof. Verma,5.0,3,91.5,A,Completed,0
+7,Aarav,Computer Science,9.0,16,MA301,Linear Algebra,Spring2026,Prof. Gupta,5.0,9,91.5,B,Completed,0
+7,Aarav,Computer Science,9.0,16,CS301,Database Systems,Spring2026,Prof. Gupta,5.0,9,91.5,A,Completed,0
+7,Aarav,Computer Science,9.0,16,PH201,Electromagnetism,Spring2026,Prof. Verma,5.0,9,91.5,A,Completed,0
+8,Vivaan,Mathematics,9.2,24,CS201,Algorithms,Spring2025,Prof. Sharma,5.0,11,92.2,A,Completed,0
+8,Vivaan,Mathematics,9.2,24,MA101,Calculus I,Spring2025,Prof. Das,5.0,11,92.2,B,Completed,0
+8,Vivaan,Mathematics,9.2,24,EC101,Basic Electronics,Spring2025,Prof. Gupta,5.0,11,92.2,A,Completed,0
+8,Vivaan,Mathematics,9.2,24,EC101,Basic Electronics,Spring2026,Prof. Singh,5.0,3,92.2,B,Completed,0
+9,Aditya,Physics,8.0,56,MA101,Calculus I,Fall2025,Prof. Singh,5.0,7,88.0,B,Completed,0
+9,Aditya,Physics,8.0,56,CS301,Database Systems,Fall2025,Prof. Das,5.0,7,88.0,B,Completed,0
+9,Aditya,Physics,8.0,56,PH101,Mechanics,Spring2026,Prof. Sharma,5.0,4,88.0,B,Completed,0
+10,Vihaan,Electronics,7.7,56,EC101,Basic Electronics,Fall2025,Prof. Singh,5.0,6,87.0,A,Completed,0
+10,Vihaan,Electronics,7.7,56,PH201,Electromagnetism,Fall2025,Prof. Gupta,5.0,6,87.0,C,Completed,0
+10,Vihaan,Electronics,7.7,56,MA301,Linear Algebra,Spring2025,Prof. Singh,10,6,87.0,B,Completed,0
+10,Vihaan,Electronics,7.7,56,CS301,Database Systems,Spring2025,Prof. Verma,5.0,6,87.0,B,Completed,0
+10,Vihaan,Electronics,7.7,56,MA201,Calculus II,Spring2026,Prof. Sharma,10,8,87.0,A,Completed,0
+10,Vihaan,Electronics,7.7,56,MA101,Calculus I,Spring2026,Prof. Verma,5.0,8,87.0,A,Completed,0
+11,Arjun,Computer Science,9.6,16,EC101,Basic Electronics,Spring2025,Prof. Gupta,5.0,8,93.6,A,Completed,0
+11,Arjun,Computer Science,9.6,16,HU101,English Communication,Spring2025,Prof. Verma,5.0,8,93.6,B,Completed,0
+11,Arjun,Computer Science,9.6,16,PH201,Electromagnetism,Spring2025,Prof. Gupta,5.0,8,93.6,C,Completed,0
+11,Arjun,Computer Science,9.6,16,PH201,Electromagnetism,Spring2026,Prof. Verma,5.0,7,93.6,A,Completed,0
+11,Arjun,Computer Science,9.6,16,MA101,Calculus I,Spring2026,Prof. Verma,5.0,7,93.6,A,Completed,0
+12,Sai,Mathematics,8.9,16,EC101,Basic Electronics,Fall2025,Prof. Singh,5.0,3,91.2,C,Completed,0
+12,Sai,Mathematics,8.9,16,CS401,Machine Learning,Spring2025,Prof. Sharma,5.0,8,91.2,C,Completed,0
+12,Sai,Mathematics,8.9,16,PH101,Mechanics,Spring2025,Prof. Singh,5.0,8,91.2,B,Completed,0
+13,Reyansh,Physics,7.6,24,HU101,English Communication,Fall2025,Prof. Gupta,5.0,2,86.6,D,Completed,0
+13,Reyansh,Physics,7.6,24,MA201,Calculus II,Spring2025,Prof. Sharma,5.0,4,86.6,A,Completed,0
+14,Ayaan,Electronics,8.0,48,EC101,Basic Electronics,Spring2025,Prof. Gupta,5.0,8,88.0,A,Completed,0
+14,Ayaan,Electronics,8.0,48,HU201,Technical Writing,Spring2025,Prof. Sharma,5.0,8,88.0,B,Completed,0
+14,Ayaan,Electronics,8.0,48,CS302,Operating Systems,Spring2025,Prof. Verma,5.0,8,88.0,A,Completed,0
+14,Ayaan,Electronics,8.0,48,CS302,Operating Systems,Spring2026,Prof. Verma,5.0,6,88.0,F,Completed,0
+14,Ayaan,Electronics,8.0,48,CS301,Database Systems,Spring2026,Prof. Gupta,5.0,6,88.0,B,Completed,0
+15,Krishna,Computer Science,7.6,24,CS101,Data Structures,Spring2025,Prof. Das,5.0,11,86.6,D,Completed,0
+15,Krishna,Computer Science,7.6,24,MA302,Probability & Statistics,Spring2025,Prof. Sharma,10,11,86.6,A,Completed,0
+15,Krishna,Computer Science,7.6,24,MA201,Calculus II,Spring2025,Prof. Sharma,8,11,86.6,A,Completed,0
+15,Krishna,Computer Science,7.6,24,CS401,Machine Learning,Spring2026,Prof. Das,5.0,11,86.6,C,Completed,0
+15,Krishna,Computer Science,7.6,24,MA101,Calculus I,Spring2026,Prof. Verma,5.0,11,86.6,B,Completed,0
+15,Krishna,Computer Science,7.6,24,EC101,Basic Electronics,Spring2026,Prof. Singh,5.0,11,86.6,B,Completed,0
+16,Ishaan,Mathematics,9.1,56,EC101,Basic Electronics,Fall2025,Prof. Singh,5.0,3,91.8,B,Completed,0
+16,Ishaan,Mathematics,9.1,56,MA101,Calculus I,Spring2026,Prof. Verma,5.0,6,91.8,B,Completed,0
+16,Ishaan,Mathematics,9.1,56,HU201,Technical Writing,Spring2026,Prof. Das,5.0,6,91.8,B,Completed,0
+17,Ananya,Physics,6.6,24,PH201,Electromagnetism,Fall2025,Prof. Gupta,5.0,3,83.1,B,Completed,0
+17,Ananya,Physics,6.6,24,HU101,English Communication,Spring2025,Prof. Verma,5.0,14,83.1,C,Completed,0
+17,Ananya,Physics,6.6,24,CS101,Data Structures,Spring2025,Prof. Das,5.0,14,83.1,N/A,Dropped,1
+17,Ananya,Physics,6.6,24,MA101,Calculus I,Spring2025,Prof. Das,5.0,14,83.1,C,Completed,0
+17,Ananya,Physics,6.6,24,CS401,Machine Learning,Spring2025,Prof. Sharma,5.0,14,83.1,B,Completed,0
+18,Diya,Electronics,6.4,32,HU101,English Communication,Fall2025,Prof. Gupta,5.0,6,82.4,B,Completed,0
+18,Diya,Electronics,6.4,32,CS401,Machine Learning,Fall2025,Prof. Das,5.0,6,82.4,N/A,Dropped,1
+18,Diya,Electronics,6.4,32,HU101,English Communication,Spring2026,Prof. Sharma,5.0,5,82.4,N/A,Dropped,1
+18,Diya,Electronics,6.4,32,EC201,Digital Logic Design,Spring2026,Prof. Sharma,5.0,5,82.4,A,Completed,0
+19,Myra,Computer Science,7.1,16,MA101,Calculus I,Fall2025,Prof. Singh,5.0,7,84.8,F,Completed,0
+19,Myra,Computer Science,7.1,16,EC101,Basic Electronics,Fall2025,Prof. Singh,5.0,7,84.8,N/A,Dropped,1
+19,Myra,Computer Science,7.1,16,HU101,English Communication,Spring2025,Prof. Verma,5.0,2,84.8,B,Completed,0
+19,Myra,Computer Science,7.1,16,PH201,Electromagnetism,Spring2026,Prof. Verma,5.0,3,84.8,N/A,Dropped,1
+20,Sara,Mathematics,7.0,24,PH101,Mechanics,Fall2025,Prof. Singh,5.0,4,84.5,D,Completed,0
+20,Sara,Mathematics,7.0,24,CS301,Database Systems,Spring2025,Prof. Verma,4,7,84.5,C,Completed,0
+20,Sara,Mathematics,7.0,24,CS201,Algorithms,Spring2025,Prof. Sharma,5.0,7,84.5,D,Completed,0
+21,Aadhya,Physics,6.9,32,HU201,Technical Writing,Fall2025,Prof. Singh,5.0,2,84.2,C,Completed,0
+21,Aadhya,Physics,6.9,32,HU101,English Communication,Spring2025,Prof. Verma,5.0,6,84.2,N/A,Dropped,1
+21,Aadhya,Physics,6.9,32,CS401,Machine Learning,Spring2025,Prof. Sharma,5.0,6,84.2,C,Completed,0
+21,Aadhya,Physics,6.9,32,CS101,Data Structures,Spring2026,Prof. Das,5.0,12,84.2,N/A,Dropped,1
+21,Aadhya,Physics,6.9,32,CS401,Machine Learning,Spring2026,Prof. Das,5.0,12,84.2,B,Completed,0
+21,Aadhya,Physics,6.9,32,MA101,Calculus I,Spring2026,Prof. Verma,5.0,12,84.2,C,Completed,0
+22,Isha,Electronics,6.1,24,MA301,Linear Algebra,Fall2025,Prof. Singh,5.0,6,81.3,D,Completed,0
+22,Isha,Electronics,6.1,24,MA302,Probability & Statistics,Fall2025,Prof. Gupta,5.0,6,81.3,A,Completed,0
+22,Isha,Electronics,6.1,24,MA301,Linear Algebra,Spring2025,Prof. Singh,5.0,9,81.3,N/A,Dropped,1
+22,Isha,Electronics,6.1,24,PH101,Mechanics,Spring2025,Prof. Singh,5.0,9,81.3,D,Completed,0
+22,Isha,Electronics,6.1,24,HU101,English Communication,Spring2025,Prof. Verma,5.0,9,81.3,B,Completed,0
+22,Isha,Electronics,6.1,24,CS302,Operating Systems,Spring2026,Prof. Verma,5.0,3,81.3,N/A,Dropped,1
+23,Kavya,Computer Science,7.4,32,CS201,Algorithms,Fall2025,Prof. Sharma,5.0,6,85.9,B,Completed,0
+23,Kavya,Computer Science,7.4,32,HU101,English Communication,Fall2025,Prof. Gupta,5.0,6,85.9,N/A,Dropped,1
+23,Kavya,Computer Science,7.4,32,EC101,Basic Electronics,Spring2025,Prof. Gupta,5.0,3,85.9,A,Completed,0
+24,Riya,Mathematics,5.7,40,CS101,Data Structures,Fall2025,Prof. Das,5.0,4,80.0,B,Completed,0
+24,Riya,Mathematics,5.7,40,CS401,Machine Learning,Spring2025,Prof. Sharma,5.0,4,80.0,F,Completed,0
+24,Riya,Mathematics,5.7,40,MA302,Probability & Statistics,Spring2026,Prof. Das,5.0,10,80.0,N/A,Dropped,1
+24,Riya,Mathematics,5.7,40,MA301,Linear Algebra,Spring2026,Prof. Gupta,5.0,10,80.0,B,Completed,0
+24,Riya,Mathematics,5.7,40,MA101,Calculus I,Spring2026,Prof. Verma,5.0,10,80.0,C,Completed,0
+25,Tara,Physics,5.7,64,MA101,Calculus I,Fall2025,Prof. Singh,5.0,10,80.0,N/A,Dropped,1
+25,Tara,Physics,5.7,64,EC201,Digital Logic Design,Fall2025,Prof. Sharma,5.0,10,80.0,B,Completed,0
+25,Tara,Physics,5.7,64,CS302,Operating Systems,Fall2025,Prof. Gupta,4,10,80.0,B,Completed,0
+25,Tara,Physics,5.7,64,EC201,Digital Logic Design,Spring2025,Prof. Verma,5.0,3,80.0,F,Completed,0
+25,Tara,Physics,5.7,64,CS302,Operating Systems,Spring2026,Prof. Verma,4,7,80.0,D,Completed,0
+25,Tara,Physics,5.7,64,CS201,Algorithms,Spring2026,Prof. Das,5.0,7,80.0,D,Completed,0
+26,Zara,Electronics,6.2,32,HU101,English Communication,Spring2025,Prof. Verma,5.0,5,81.7,B,Completed,0
+26,Zara,Electronics,6.2,32,EC201,Digital Logic Design,Spring2025,Prof. Verma,5.0,5,81.7,N/A,Dropped,1
+26,Zara,Electronics,6.2,32,MA201,Calculus II,Spring2026,Prof. Sharma,5.0,10,81.7,N/A,Dropped,1
+26,Zara,Electronics,6.2,32,HU201,Technical Writing,Spring2026,Prof. Das,8,10,81.7,B,Completed,0
+26,Zara,Electronics,6.2,32,CS201,Algorithms,Spring2026,Prof. Das,5.0,10,81.7,C,Completed,0
+27,Rohan,Computer Science,7.1,56,CS301,Database Systems,Spring2025,Prof. Verma,5.0,7,84.8,B,Completed,0
+27,Rohan,Computer Science,7.1,56,CS101,Data Structures,Spring2025,Prof. Das,5.0,7,84.8,N/A,Dropped,1
+27,Rohan,Computer Science,7.1,56,MA101,Calculus I,Spring2026,Prof. Verma,5.0,8,84.8,B,Completed,0
+27,Rohan,Computer Science,7.1,56,CS201,Algorithms,Spring2026,Prof. Das,5.0,8,84.8,N/A,Dropped,1
+28,Karan,Mathematics,6.4,16,MA201,Calculus II,Fall2025,Prof. Singh,5.0,4,82.4,F,Completed,0
+28,Karan,Mathematics,6.4,16,CS301,Database Systems,Spring2025,Prof. Verma,5.0,3,82.4,N/A,Dropped,1
+28,Karan,Mathematics,6.4,16,CS302,Operating Systems,Spring2026,Prof. Verma,5.0,3,82.4,C,Completed,0
+29,Amit,Physics,7.4,40,EC101,Basic Electronics,Fall2025,Prof. Singh,5.0,3,85.9,N/A,Dropped,1
+29,Amit,Physics,7.4,40,PH201,Electromagnetism,Spring2025,Prof. Gupta,5.0,3,85.9,B,Completed,0
+29,Amit,Physics,7.4,40,PH201,Electromagnetism,Spring2026,Prof. Verma,5.0,3,85.9,A,Completed,0
+30,Priya,Electronics,5.7,32,HU201,Technical Writing,Fall2025,Prof. Singh,5.0,5,80.0,N/A,Dropped,1
+30,Priya,Electronics,5.7,32,MA302,Probability & Statistics,Fall2025,Prof. Gupta,5.0,5,80.0,F,Completed,0
+30,Priya,Electronics,5.7,32,CS302,Operating Systems,Spring2025,Prof. Verma,5.0,6,80.0,F,Completed,0
+30,Priya,Electronics,5.7,32,MA302,Probability & Statistics,Spring2025,Prof. Sharma,5.0,6,80.0,C,Completed,0
+30,Priya,Electronics,5.7,32,PH201,Electromagnetism,Spring2026,Prof. Verma,5.0,3,80.0,C,Completed,0
+31,Neha,Computer Science,7.2,48,HU101,English Communication,Spring2026,Prof. Sharma,5.0,10,85.2,B,Completed,0
+31,Neha,Computer Science,7.2,48,MA101,Calculus I,Spring2026,Prof. Verma,5.0,10,85.2,B,Completed,0
+31,Neha,Computer Science,7.2,48,PH101,Mechanics,Spring2026,Prof. Sharma,5.0,10,85.2,D,Completed,0
+32,Rahul,Mathematics,5.2,32,EC201,Digital Logic Design,Fall2025,Prof. Sharma,5.0,13,78.2,D,Completed,0
+32,Rahul,Mathematics,5.2,32,MA201,Calculus II,Fall2025,Prof. Singh,5.0,13,78.2,N/A,Dropped,1
+32,Rahul,Mathematics,5.2,32,PH201,Electromagnetism,Fall2025,Prof. Gupta,5.0,13,78.2,A,Completed,0
+32,Rahul,Mathematics,5.2,32,MA302,Probability & Statistics,Fall2025,Prof. Gupta,5.0,13,78.2,F,Failed,1
+32,Rahul,Mathematics,5.2,32,CS101,Data Structures,Spring2026,Prof. Das,5.0,7,78.2,F,Failed,1
+32,Rahul,Mathematics,5.2,32,CS302,Operating Systems,Spring2026,Prof. Verma,5.0,7,78.2,F,Failed,1
+33,Sneha,Physics,4.4,56,EC101,Basic Electronics,Fall2025,Prof. Singh,5.0,7,75.4,C,Completed,0
+33,Sneha,Physics,4.4,56,CS201,Algorithms,Fall2025,Prof. Sharma,5.0,7,75.4,F,Failed,1
+33,Sneha,Physics,4.4,56,PH101,Mechanics,Spring2026,Prof. Sharma,5.0,7,75.4,F,Failed,1
+33,Sneha,Physics,4.4,56,EC201,Digital Logic Design,Spring2026,Prof. Sharma,6,7,75.4,A,Completed,0
+34,Deepak,Electronics,3.2,56,CS201,Algorithms,Fall2025,Prof. Sharma,6,4,71.2,F,Failed,1
+34,Deepak,Electronics,3.2,56,CS301,Database Systems,Spring2025,Prof. Verma,5.0,7,71.2,F,Failed,1
+34,Deepak,Electronics,3.2,56,CS101,Data Structures,Spring2025,Prof. Das,5.0,7,71.2,C,Completed,0
+35,Pooja,Computer Science,3.6,32,HU101,English Communication,Fall2025,Prof. Gupta,5.0,2,72.6,F,Completed,0
+35,Pooja,Computer Science,3.6,32,CS301,Database Systems,Spring2025,Prof. Verma,5.0,8,72.6,F,Failed,1
+35,Pooja,Computer Science,3.6,32,MA301,Linear Algebra,Spring2025,Prof. Singh,5.0,8,72.6,A,Completed,0
+35,Pooja,Computer Science,3.6,32,HU201,Technical Writing,Spring2025,Prof. Sharma,0,8,72.6,C,Completed,0
+35,Pooja,Computer Science,3.6,32,EC201,Digital Logic Design,Spring2026,Prof. Sharma,5.0,3,72.6,F,Failed,1
+36,Vikram,Mathematics,5.5,64,PH101,Mechanics,Fall2025,Prof. Singh,5.0,4,79.2,N/A,Dropped,1
+36,Vikram,Mathematics,5.5,64,EC101,Basic Electronics,Spring2026,Prof. Singh,5.0,7,79.2,C,Completed,0
+36,Vikram,Mathematics,5.5,64,MA101,Calculus I,Spring2026,Prof. Verma,5.0,7,79.2,D,Completed,0
+37,Meera,Physics,3.6,16,HU201,Technical Writing,Spring2025,Prof. Sharma,5.0,5,72.6,A,Completed,0
+37,Meera,Physics,3.6,16,CS302,Operating Systems,Spring2025,Prof. Verma,5.0,5,72.6,F,Failed,1
+37,Meera,Physics,3.6,16,CS401,Machine Learning,Spring2026,Prof. Das,5.0,7,72.6,F,Completed,0
+37,Meera,Physics,3.6,16,EC101,Basic Electronics,Spring2026,Prof. Singh,5.0,7,72.6,N/A,Dropped,1
+38,Yash,Electronics,4.0,40,MA302,Probability & Statistics,Spring2025,Prof. Sharma,5.0,3,74.0,D,Completed,0
+38,Yash,Electronics,4.0,40,MA301,Linear Algebra,Spring2026,Prof. Gupta,5.0,7,74.0,N/A,Dropped,1
+38,Yash,Electronics,4.0,40,CS201,Algorithms,Spring2026,Prof. Das,5.0,7,74.0,N/A,Dropped,1
+39,Simran,Computer Science,4.6,32,CS301,Database Systems,Fall2025,Prof. Das,5.0,10,76.1,F,Completed,0
+39,Simran,Computer Science,4.6,32,PH201,Electromagnetism,Fall2025,Prof. Gupta,5.0,10,76.1,N/A,Dropped,1
+39,Simran,Computer Science,4.6,32,CS201,Algorithms,Fall2025,Prof. Sharma,5.0,10,76.1,F,Failed,1
+39,Simran,Computer Science,4.6,32,MA201,Calculus II,Spring2025,Prof. Sharma,5.0,6,76.1,N/A,Dropped,1
+39,Simran,Computer Science,4.6,32,HU101,English Communication,Spring2025,Prof. Verma,5.0,6,76.1,F,Completed,0
+39,Simran,Computer Science,4.6,32,HU101,English Communication,Spring2026,Prof. Sharma,5.0,2,76.1,F,Failed,1
+40,Akash,Mathematics,3.4,32,MA302,Probability & Statistics,Fall2025,Prof. Gupta,5.0,9,71.9,C,Completed,0
+40,Akash,Mathematics,3.4,32,MA301,Linear Algebra,Fall2025,Prof. Singh,5.0,9,71.9,C,Completed,0
+40,Akash,Mathematics,3.4,32,EC201,Digital Logic Design,Fall2025,Prof. Sharma,5.0,9,71.9,N/A,Dropped,1
+40,Akash,Mathematics,3.4,32,HU201,Technical Writing,Spring2026,Prof. Das,5.0,8,71.9,F,Completed,0
+40,Akash,Mathematics,3.4,32,CS302,Operating Systems,Spring2026,Prof. Verma,5.0,8,71.9,N/A,Dropped,1
+40,Akash,Mathematics,3.4,32,EC101,Basic Electronics,Spring2026,Prof. Singh,5.0,8,71.9,N/A,Dropped,1
+41,Nisha,Physics,3.5,32,MA301,Linear Algebra,Fall2025,Prof. Singh,5.0,11,72.2,A,Completed,0
+41,Nisha,Physics,3.5,32,CS302,Operating Systems,Fall2025,Prof. Gupta,5.0,11,72.2,N/A,Dropped,1
+41,Nisha,Physics,3.5,32,PH201,Electromagnetism,Fall2025,Prof. Gupta,5.0,11,72.2,D,Completed,0
+41,Nisha,Physics,3.5,32,HU101,English Communication,Fall2025,Prof. Gupta,5.0,11,72.2,C,Completed,0
+41,Nisha,Physics,3.5,32,CS201,Algorithms,Spring2025,Prof. Sharma,5.0,4,72.2,N/A,Dropped,1
+41,Nisha,Physics,3.5,32,EC201,Digital Logic Design,Spring2026,Prof. Sharma,5.0,3,72.2,N/A,Dropped,1
+42,Suresh,Electronics,4.8,56,EC101,Basic Electronics,Spring2025,Prof. Gupta,5.0,8,76.8,F,Completed,0
+42,Suresh,Electronics,4.8,56,MA302,Probability & Statistics,Spring2025,Prof. Sharma,5.0,8,76.8,C,Completed,0
+42,Suresh,Electronics,4.8,56,HU101,English Communication,Spring2025,Prof. Verma,5.0,8,76.8,N/A,Dropped,1
+42,Suresh,Electronics,4.8,56,MA301,Linear Algebra,Spring2026,Prof. Gupta,5.0,3,76.8,D,Completed,0
+43,Anjali,Computer Science,4.6,48,PH101,Mechanics,Fall2025,Prof. Singh,5.0,8,76.1,F,Completed,0
+43,Anjali,Computer Science,4.6,48,MA101,Calculus I,Fall2025,Prof. Singh,5.0,8,76.1,F,Completed,0
+43,Anjali,Computer Science,4.6,48,CS101,Data Structures,Spring2025,Prof. Das,5.0,9,76.1,N/A,Dropped,1
+43,Anjali,Computer Science,4.6,48,CS301,Database Systems,Spring2025,Prof. Verma,5.0,9,76.1,F,Completed,0
+43,Anjali,Computer Science,4.6,48,HU201,Technical Writing,Spring2025,Prof. Sharma,5.0,9,76.1,C,Completed,0
+44,Mohit,Mathematics,4.6,48,CS301,Database Systems,Spring2026,Prof. Gupta,5.0,8,76.1,F,Completed,0
+44,Mohit,Mathematics,4.6,48,HU101,English Communication,Spring2026,Prof. Sharma,5.0,8,76.1,B,Completed,0
+44,Mohit,Mathematics,4.6,48,MA301,Linear Algebra,Spring2026,Prof. Gupta,5.0,8,76.1,N/A,Dropped,1
+45,Divya,Physics,4.8,24,HU201,Technical Writing,Fall2025,Prof. Singh,5.0,2,76.8,N/A,Dropped,1
+45,Divya,Physics,4.8,24,MA201,Calculus II,Spring2026,Prof. Sharma,0,8,76.8,D,Completed,0
+45,Divya,Physics,4.8,24,MA101,Calculus I,Spring2026,Prof. Verma,5.0,8,76.8,F,Completed,0
+46,Rajesh,Electronics,4.2,32,CS301,Database Systems,Fall2025,Prof. Das,5.0,6,74.7,B,Completed,0
+46,Rajesh,Electronics,4.2,32,CS302,Operating Systems,Fall2025,Prof. Gupta,5.0,6,74.7,F,Failed,1
+46,Rajesh,Electronics,4.2,32,MA101,Calculus I,Spring2026,Prof. Verma,5.0,6,74.7,C,Completed,0
+46,Rajesh,Electronics,4.2,32,HU201,Technical Writing,Spring2026,Prof. Das,5.0,6,74.7,D,Completed,0

@@ -75,29 +75,17 @@ Possible models include:
 
 ## Dataset
 
-The **Open University Learning Analytics Dataset (OULAD)** is used for both Machine Learning components.
+The project uses the **Open University Learning Analytics Dataset (OULAD)** for both Machine Learning modules.
+
+The dataset contains student demographics, course registrations, assessment results, and Virtual Learning Environment (VLE) interaction data.
 
 ### Course Recommendation
-
-OULAD provides historical student-course interaction data that can be used to construct the recommendation task.
-
-Relevant information includes:
-
-- Student-course interactions
-- Course/module information
-- Assessment information
-- Student performance
-- Course activity
-
-The recommendation system will use historical interactions to identify courses that may be relevant to a student.
+Historical student-course registrations, interactions, course information, and academic performance are used to build the course recommendation system.
 
 ### Academic Risk Prediction
+Student academic performance, assessment results, registration information, and learning activity are used to build the academic-risk prediction model.
 
-OULAD is also used for academic-risk prediction using historical academic, assessment, and course-related information.
-
-Dataset:
-
-[OULAD - Open University Learning Analytics Dataset](https://analyse.kmi.open.ac.uk/open_dataset)
+**Dataset:** [OULAD - Kaggle](https://www.kaggle.com/datasets/anlgrbz/student-demographics-online-education-dataoulad)
 
 ## Tech Stack
 

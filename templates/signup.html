@@ -1,0 +1,28 @@
+<html>
+<body>
+    <h2>Student Sign Up</h2>
+
+    {% for message in get_flashed_messages() %}
+        <p>{{ message }}</p>
+    {% endfor %}
+
+    <form method="POST">
+        Name: <input type="text" name="name" required><br><br>
+
+        Department:
+        <select name="dept_id">
+            {% for d in departments %}
+                <option value="{{ d.dept_id }}">{{ d.dept_name }}</option>
+            {% endfor %}
+        </select><br><br>
+
+        Phone: <input type="text" name="phone" required><br><br>
+        Email: <input type="email" name="email" required><br><br>
+        Password: <input type="password" name="password" required><br><br>
+
+        <button type="submit">Sign Up</button>
+    </form>
+
+    <p>Already have an account? <a href="/login">Login</a></p>
+</body>
+</html>

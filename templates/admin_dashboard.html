@@ -1,14 +1,57 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Admin Dashboard</title>
     <style>
-        body { font-family: Arial, sans-serif; padding: 20px; }
-        table { border-collapse: collapse; width: 50%; margin-top: 20px; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-        th { background-color: #f2f2f2; }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        textarea {
+            width: 80%;
+            height: 80px;
+            font-family: monospace;
+            font-size: 14px;
+            padding: 10px;
+        }
+
+        .query-section {
+            margin-top: 30px;
+        }
+
+        .msg {
+            padding: 10px;
+            margin-top: 10px;
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+        }
+
+        .msg.error {
+            background: #fce4ec;
+            border-left-color: #e53935;
+        }
     </style>
 </head>
+
 <body>
     <div style="float: right;">
         <a href="/logout">Logout</a>
@@ -16,7 +59,7 @@
 
     <h1>System Admin Dashboard</h1>
     <p>Welcome, Administrator.</p>
-    
+
     <hr>
 
     <h3>Active Departments</h3>
@@ -32,5 +75,38 @@
         </tr>
         {% endfor %}
     </table>
+
+    <hr>
+
+    <div class="query-section">
+        <h3>Run SQL Query</h3>
+        <form method="POST" action="/admin_query">
+            <textarea name="sql_query">{{ last_query or 'SELECT * FROM students' }}</textarea><br><br>
+            <button type="submit" style="padding: 8px 20px; font-size: 14px; cursor: pointer;">Execute</button>
+        </form>
+
+        {% if message %}
+        <div class="msg {{ 'error' if message.startswith('Error') else '' }}">{{ message }}</div>
+        {% endif %}
+
+        {% if rows %}
+        <table>
+            <tr>
+                {% for col in columns %}
+                <th>{{ col }}</th>
+                {% endfor %}
+            </tr>
+            {% for row in rows %}
+            <tr>
+                {% for col in columns %}
+                <td>{{ row[col] }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+        {% endif %}
+    </div>
+
 </body>
+
 </html>

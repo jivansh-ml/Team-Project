@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 10px; margin-bottom: 30px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .high-risk { color: white; background-color: #e74c3c; padding: 4px 8px; border-radius: 4px; font-weight: bold;}
+        .medium-risk { color: white; background-color: #f39c12; padding: 4px 8px; border-radius: 4px; font-weight: bold;}
+        .low-risk { color: white; background-color: #2ecc71; padding: 4px 8px; border-radius: 4px; font-weight: bold;}
+        .flash { color: green; font-weight: bold; }
+        .add-btn { background-color: #3498db; color: white; border: none; padding: 5px 10px; cursor: pointer; }
+        .drop-btn { background-color: #e74c3c; color: white; border: none; padding: 5px 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div style="float: right;">
+        <a href="/logout">Logout</a>
+    </div>
+
+    <h1>Welcome, {{ student.name }}</h1>
+    <p><strong>Department ID:</strong> {{ student.dept_id }} | <strong>CGPA:</strong> {{ student.cgpa }} | <strong>Credits Completed:</strong> {{ student.total_credits_completed }}</p>
+    
+    <hr>
+    
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <p class="flash">{{ messages[0] }}</p>
+      {% endif %}
+    {% endwith %}
+
+    <h3>Your Current Registrations</h3>
+    <table>
+        <tr>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>Credits</th>
+            <th>Predicted Risk</th>
+            <th>Action</th>
+        </tr>
+        {% for course in courses %}
+        <tr>
+            <td>{{ course.course_code }}</td>
+            <td>{{ course.course_name }}</td>
+            <td>{{ course.credits }}</td>
+            <td>
+                {% if course.risk_level == 'High Risk' %}
+                    <span class="high-risk">High Risk</span>
+                {% elif course.risk_level == 'Medium Risk' %}
+                    <span class="medium-risk">Medium Risk</span>
+                {% elif course.risk_level == 'Low Risk' %}
+                    <span class="low-risk">Low Risk</span>
+                {% else %}
+                    <span style="color: gray;">Processing...</span>
+                {% endif %}
+            </td>
+            <td>
+                <form action="/drop_course/{{ course.registration_id }}" method="POST" style="margin:0;">
+                    <button type="submit" class="drop-btn" onclick="return confirm('Are you sure you want to drop this course?');">Drop</button>
+                </form>
+            </td>
+        </tr>
+        {% else %}
+        <tr><td colspan="5">You are not registered for any courses yet.</td></tr>
+        {% endfor %}
+    </table>
+
+    <h3>Available Courses (Your Department)</h3>
+    <p><em>Review the ML Risk Prediction before adding a course to your schedule.</em></p>
+    <table>
+        <tr>
+            <th>Section ID</th>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>Schedule</th>
+            <th>Predicted Risk</th>
+            <th>Action</th>
+        </tr>
+        {% for sec in available_sections %}
+        <tr>
+            <td>{{ sec.section_id }}</td>
+            <td>{{ sec.course_code }}</td>
+            <td>{{ sec.course_name }}</td>
+            <td>{{ sec.schedule }}</td>
+            <td>
+                {% if sec.risk_level == 'High Risk' %}
+                    <span class="high-risk">High Risk</span>
+                {% elif sec.risk_level == 'Medium Risk' %}
+                    <span class="medium-risk">Medium Risk</span>
+                {% elif sec.risk_level == 'Low Risk' %}
+                    <span class="low-risk">Low Risk</span>
+                {% else %}
+                    <span style="color: gray;">Unknown</span>
+                {% endif %}
+            </td>
+            <td>
+                <form action="/add_course" method="POST" style="margin:0;">
+                    <input type="hidden" name="section_id" value="{{ sec.section_id }}">
+                    <button type="submit" class="add-btn">Add Course</button>
+                </form>
+            </td>
+        </tr>
+        {% else %}
+        <tr><td colspan="6">No more courses available in your department.</td></tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>

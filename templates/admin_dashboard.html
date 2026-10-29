@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        table { border-collapse: collapse; width: 50%; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <div style="float: right;">
+        <a href="/logout">Logout</a>
+    </div>
+
+    <h1>System Admin Dashboard</h1>
+    <p>Welcome, Administrator.</p>
+    
+    <hr>
+
+    <h3>Active Departments</h3>
+    <table>
+        <tr>
+            <th>Department ID</th>
+            <th>Department Name</th>
+        </tr>
+        {% for d in depts %}
+        <tr>
+            <td>{{ d.dept_id }}</td>
+            <td>{{ d.dept_name }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

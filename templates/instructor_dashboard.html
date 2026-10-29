@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Instructor Dashboard</title>
     <style>
-        body { font-family: Arial, sans-serif; padding: 20px; }
-        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-        th { background-color: #f2f2f2; }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
     </style>
 </head>
+
 <body>
     <div style="float: right;">
         <a href="/logout">Logout</a>
@@ -16,7 +35,7 @@
 
     <h1>Welcome, Prof. {{ instructor.name }}</h1>
     <p><strong>Specialization:</strong> {{ instructor.specialization }}</p>
-    
+
     <hr>
 
     <h3>Your Assigned Sections (Current Semester)</h3>
@@ -25,7 +44,7 @@
         <h4>{{ sec.course_code }} - {{ sec.course_name }} (Section {{ sec.section_id }})</h4>
         <p><strong>Room:</strong> {{ sec.room_no }} | <strong>Schedule:</strong> {{ sec.schedule }}</p>
         <p><strong>Enrolled Students:</strong> {{ sec.enrolled_count }}</p>
-        
+
         {% if sec.students %}
         <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
             <tr>
@@ -50,4 +69,5 @@
     {% endfor %}
 
 </body>
+
 </html>

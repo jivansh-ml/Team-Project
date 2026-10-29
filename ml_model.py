@@ -1,22 +1,28 @@
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
-from sqlalchemy import create_engine, text
+from database import get_db_connection
 
 import warnings
 warnings.filterwarnings('ignore', category=UserWarning)
 
 def train_and_predict():
     print("Step 1/5: Connecting to MySQL Database...")
-    # This is the industry standard approach for production (SQLAlchemy)
-    # Note: URL-encoded the @ symbol in the password as %40
-    engine = create_engine("mysql+pymysql://root:Koustubh%40124@localhost/course_registration")
-    
+    conn = get_db_connection()
+    cursor = conn.cursor(dictionary=True)
+
     print("Step 2/5: Fetching and preparing data...")
-    registrations = pd.read_sql("SELECT * FROM registrations", engine)
-    students = pd.read_sql("SELECT student_id, cgpa, total_credits_completed, dept_id FROM students", engine)
-    courses = pd.read_sql("SELECT course_id, credits, dept_id FROM courses", engine)
-    prerequisites = pd.read_sql("SELECT course_id, prerequisite_course_id FROM prerequisites", engine)
+    cursor.execute("SELECT * FROM registrations")
+    registrations = pd.DataFrame(cursor.fetchall())
+
+    cursor.execute("SELECT student_id, cgpa, total_credits_completed, dept_id FROM students")
+    students = pd.DataFrame(cursor.fetchall())
+
+    cursor.execute("SELECT course_id, credits, dept_id FROM courses")
+    courses = pd.DataFrame(cursor.fetchall())
+
+    cursor.execute("SELECT course_id, prerequisite_course_id FROM prerequisites")
+    prerequisites = pd.DataFrame(cursor.fetchall())
 
     df = registrations.merge(students, on='student_id', how='left')
     df = df.merge(courses, on='course_id', how='left', suffixes=('_student', '_course'))
@@ -80,30 +86,32 @@ def train_and_predict():
     risk_names = {0: 'Low Risk', 1: 'Medium Risk', 2: 'High Risk'}
     df_pred['risk_level'] = df_pred['predicted_risk'].map(risk_names)
 
-    print(f"Step 5/5: Pushing predictions to MySQL automatically...")
-    
-    # Format the data exactly as the table needs it and drop duplicates caused by multiple prerequisites
+    print("Step 5/5: Pushing predictions to MySQL...")
     final_output = df_pred[['student_id', 'course_id', 'risk_level']].copy()
     final_output = final_output.drop_duplicates(subset=['student_id', 'course_id'])
-    
-    # Create table with correct schema first
-    with engine.connect() as con:
-        con.execute(text("""
-            CREATE TABLE IF NOT EXISTS ml_risk_scores (
-                student_id INT,
-                course_id INT,
-                risk_level ENUM('Low Risk', 'Medium Risk', 'High Risk') NOT NULL,
-                PRIMARY KEY (student_id, course_id),
-                FOREIGN KEY (student_id) REFERENCES students(student_id),
-                FOREIGN KEY (course_id) REFERENCES courses(course_id)
-            )
-        """))
-        con.execute(text("TRUNCATE TABLE ml_risk_scores"))
 
-    # This is the industry-standard way to push massive amounts of data directly to SQL in Python
-    final_output.to_sql(name='ml_risk_scores', con=engine, if_exists='append', index=False, method='multi', chunksize=1000)
-    
-    print(f"Done! Successfully updated live database entirely through Python.")
+    # Create table if it doesn't exist
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS ml_risk_scores (
+            student_id INT,
+            course_id INT,
+            risk_level ENUM('Low Risk', 'Medium Risk', 'High Risk') NOT NULL,
+            PRIMARY KEY (student_id, course_id),
+            FOREIGN KEY (student_id) REFERENCES students(student_id),
+            FOREIGN KEY (course_id) REFERENCES courses(course_id)
+        )
+    """)
+    cursor.execute("TRUNCATE TABLE ml_risk_scores")
+
+    # Insert predictions using mysql.connector (no SQLAlchemy needed)
+    insert_sql = "INSERT INTO ml_risk_scores (student_id, course_id, risk_level) VALUES (%s, %s, %s)"
+    rows = list(final_output.itertuples(index=False, name=None))
+    cursor.executemany(insert_sql, rows)
+    conn.commit()
+
+    cursor.close()
+    conn.close()
+    print(f"Done! Successfully updated {len(rows)} predictions in the database.")
 
 if __name__ == "__main__":
     train_and_predict()

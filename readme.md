@@ -76,21 +76,6 @@ Possible models include:
 - KNN
 
 ## Dataset
-
-<<<<<<< HEAD
-The project uses the **Open University Learning Analytics Dataset (OULAD)** for both Machine Learning modules.
-
-The dataset contains student demographics, course registrations, assessment results, and Virtual Learning Environment (VLE) interaction data.
-
-### Course Recommendation
-Historical student-course registrations, interactions, course information, and academic performance are used to build the course recommendation system.
-
-### Academic Risk Prediction
-Student academic performance, assessment results, registration information, and learning activity are used to build the academic-risk prediction model.
-
-**Dataset:** [OULAD - Kaggle](https://www.kaggle.com/datasets/anlgrbz/student-demographics-online-education-dataoulad)
-
-=======
  synthetic, simulated dataset generated specifically for testing and demonstration purposes.
 
 ### Course Recommendation

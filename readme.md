@@ -78,21 +78,6 @@ Possible models include:
 ## Dataset
  synthetic, simulated dataset generated specifically for testing and demonstration purposes.
 
-### Course Recommendation
-
-Data that can be used to construct the recommendation task.
-
-Relevant information includes:
-
-- Student-course interactions
-- Course/module information
-- Assessment information
-- Student performance
-- Course activity
-
-The recommendation system will use historical interactions to identify courses that may be relevant to a student.
-
->>>>>>> b11381a7067f1dd577a3ddd7d18c2712815457fe
 ## Tech Stack
 
 ```text
